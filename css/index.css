@@ -1,1 +1,313 @@
-/* code here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #fdfdfd;
+  font-family: 'Inter', sans-serif;
+}
+p {
+  color: #717680;
+}
+
+/* hapus ini nanti */
+nav,
+section {
+  padding: 0 140px;
+}
+
+i {
+  font-style: italic;
+}
+
+button {
+  background-color: #421abc !important;
+  border-radius: 9999px;
+  color: #fdfdfd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.what-we-do .text-center,
+.our-work .text-center,
+.team .text,
+.contact-us .text-center {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 140px;
+  height: 84px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  width: 160px;
+  height: 36px;
+  align-items: center;
+}
+
+.nav-item {
+  justify-content: center;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  gap: 6px;
+}
+
+.menu-item {
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+nav button {
+  padding: 8px;
+  width: 160px;
+  height: 44px;
+  border: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  padding: 0 140px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, #210a5e4d 30%, #000000 70%);
+  max-height: 750px;
+  gap: 18px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 687px;
+  max-height: 282px;
+  gap: 48px;
+}
+
+.hero .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-text .title {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  letter-spacing: -3%;
+}
+
+.hero-text .desc {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  font-weight: 400;
+}
+
+.hero-button {
+  width: 300px;
+  height: 48px;
+  padding: 8px;
+}
+
+.hero img {
+  max-width: 595.22px;
+  max-height: 809px;
+  z-index: 0;
+}
+
+/* who we are section */
+.who-we-are {
+  padding: 80px 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 80px 140px;
+}
+
+/* Who we are section */
+.who-we-are p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+.who-we-are span {
+  color: #fdfdfd;
+}
+
+/* what we do sections */
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 140px;
+  gap: 64px;
+}
+
+.service-row {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 20px;
+}
+
+.service-card {
+  max-width: 314px;
+  max-height: 214px;
+  padding: 24px;
+}
+
+.service-card .icon {
+  width: 48px;
+  height: 48px;
+}
+
+.service-card .title {
+  font-size: 1.25rem;
+  line-height: 2.125rem;
+  font-weight: 700;
+}
+.service-card .desc {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+/* Our Work section */
+.our-work {
+  text-align: center;
+  padding: 80px 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.portofolio {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.portofolio-card img {
+  width: 100%;
+  max-height: 373px;
+  border-radius: 16px;
+}
+
+.portofolio-card p {
+  color: #fdfdfd;
+  font-weight: 700;
+  text-align: start;
+}
+
+/* TEAM  */
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 80px 140px;
+}
+
+.members {
+  display: flex;
+  gap: 56px;
+  justify-content: space-between;
+}
+
+.member-card {
+  width: 100%;
+  max-height: 308px;
+}
+
+.member-card img {
+  border-radius: 9999px;
+  gap: 20px;
+  max-width: 100%;
+  max-height: 220px;
+}
+
+/* contact us  */
+
+.contact-us {
+  display: flex;
+  padding: 80px 140px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  width: 592px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.input-item {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+}
+
+.input-item input,
+textarea {
+  padding: 0.5rem 1rem;
+  border: solid 1px #252b37;
+  color: #252b37;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  background-color: #000000;
+  font: inherit;
+}
+.input-item input {
+  height: 48px;
+}
+.input-item textarea {
+  height: 134px;
+}
+
+.input-item label {
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+.form-contact button {
+  margin-top: 20px;
+  padding: 8px;
+  height: 48px;
+}
+
+footer {
+  border-top: 1px solid #181d27;
+  padding: 24px 8px;
+  text-align: center;
+}
