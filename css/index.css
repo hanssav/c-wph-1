@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+/* mobile view menu configuration */
+body.no-scroll {
+  overflow: hidden;
+}
+
 :root {
   --primary: #421abc;
   --bg-dark: #000000;
@@ -115,10 +120,15 @@ button {
 /* NAVIGATION */
 nav {
   display: flex;
+  background-color: var(--bg-dark);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px); /* support Safari */
   justify-content: space-between;
   align-items: center;
   padding: 10px 140px;
   height: 84px;
+  position: relative;
+  z-index: 101;
 }
 
 .logo {
@@ -181,6 +191,48 @@ nav .nav-item:last-child {
   }
 }
 
+/* MENU MOBILE VIEW WHEN CLICK MENU ICON */
+/* Only show this menu in mobile */
+.mobile-menu {
+  padding: 20px 20px;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  height: calc(100vh - 65px);
+  width: 100%;
+  background-color: var(--bg-dark);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+  justify-content: start;
+  z-index: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-menu .contact {
+  width: 100%;
+  padding: 12px;
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+
 /* HERO SECTION */
 .hero {
   position: relative;
@@ -235,6 +287,8 @@ nav .nav-item:last-child {
 
 @media (max-width: 768px) {
   .hero-text {
+    width: 100%;
+    max-width: 768px;
     gap: 24px;
   }
 

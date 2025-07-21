@@ -29,11 +29,24 @@
         <button class="contact">Contact Us</button>
       </div>
       <div class="nav-item">
-        <button class="menu-icon">
-          <img src="./assets/icons/menu-icon.png" alt="" />
+        <button class="menu-icon" id="menu-toggle">
+          <img
+            src="./assets/icons/menu-icon.png"
+            alt="menu-icon"
+            id="menu-icon"
+          />
         </button>
       </div>
     </nav>
+
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="mobile-menu hidden">
+      <div class="menu-item">About</div>
+      <div class="menu-item">Service</div>
+      <div class="menu-item">Our Work</div>
+      <div class="menu-item">Team</div>
+      <button class="contact">Contact Us</button>
+    </div>
 
     <section class="hero">
       <div class="hero-text">
@@ -250,5 +263,7 @@
     <footer>
       <p>© 2025 Web Programming Hack. All rights reserved.</p>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
