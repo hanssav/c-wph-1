@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-/* mobile view menu configuration */
-body.no-scroll {
-  overflow: hidden;
-}
-
 :root {
   --primary: #421abc;
   --bg-dark: #000000;
@@ -45,6 +40,11 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-light);
   font-family: 'Inter', sans-serif;
+}
+
+/* mobile view menu configuration */
+body.no-scroll {
+  overflow: hidden;
 }
 
 i {
@@ -117,7 +117,7 @@ button {
   gap: 16px;
 }
 
-/* NAVIGATION */
+/* ======================== NAVIGATION ========================*/
 nav {
   display: flex;
   background-color: var(--bg-dark);
@@ -162,6 +162,7 @@ nav .contact {
   border: none;
 }
 
+/* handle hamburger menu-icon hidden */
 nav .nav-item:last-child {
   display: none;
 }
@@ -191,7 +192,7 @@ nav .nav-item:last-child {
   }
 }
 
-/* MENU MOBILE VIEW WHEN CLICK MENU ICON */
+/* ======================== MENU MOBILE VIEW WHEN CLICK MENU ICON ======================== */
 /* Only show this menu in mobile */
 .mobile-menu {
   padding: 20px 20px;
@@ -219,21 +220,7 @@ nav .nav-item:last-child {
   padding: 12px;
 }
 
-.desktop-menu {
-  display: flex;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .desktop-menu {
-    display: none;
-  }
-  .mobile-menu-icon {
-    display: block;
-  }
-}
-
-/* HERO SECTION */
+/* ======================== HERO SECTION ======================== */
 .hero {
   position: relative;
   height: 750px;
@@ -354,7 +341,7 @@ nav .nav-item:last-child {
   }
 }
 
-/* who we are section */
+/* ======================== WHO WE ARE SECTION ======================== */
 .who-we-are {
   display: flex;
   flex-direction: column;
@@ -452,7 +439,7 @@ nav .nav-item:last-child {
   }
 }
 
-/* Our Work section */
+/* ======================== OUR WORK SECTION ========================*/
 .our-work {
   text-align: center;
   display: grid;
@@ -506,7 +493,7 @@ nav .nav-item:last-child {
   }
 }
 
-/* TEAM  */
+/* ======================== TEAM ========================  */
 .team {
   display: grid;
   gap: 64px;
@@ -570,7 +557,7 @@ nav .nav-item:last-child {
   max-height: 220px;
 }
 
-/* contact us  */
+/* ======================== CONTACT US ======================== */
 .contact-us {
   display: flex;
   justify-content: center;
@@ -650,6 +637,7 @@ textarea {
   height: 48px;
 }
 
+/* ======================== FOOTER ======================== */
 footer {
   border-top: 1px solid var(--border-color);
   padding: 24px 8px;
