@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chalenge 1 WPH</title>
     <!-- css -->
     <link rel="stylesheet" href="./css/reset.css" /`>
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -12,23 +12,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.  googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <nav>
-      <div class="logo nav-item">Tech.</div>
-      <div class="menu nav-item">
-        <div class="menu-item">About</div>
-        <div class="menu-item">Service</div>
-        <div class="menu-item">Our Work</div>
-        <div class="menu-item">Team</div>
+    <header>
+      <div class="logo item">
+        <img src="./assets/images/tech-logo.svg" alt="tech-logo" />
       </div>
-      <div class="nav-item">
+
+      <nav class="item">
+        <ul class="nav-list">
+          <li class="nav-item">About</li>
+          <li class="nav-item">Service</li>
+          <li class="nav-item">Our Work</li>
+          <li class="nav-item">Team</li>
+        </ul>
+      </nav>
+
+      <div class="item">
         <button class="contact">Contact Us</button>
       </div>
-      <div class="nav-item">
+
+      <div class="item">
         <button class="menu-icon" id="menu-toggle">
           <img
             src="./assets/icons/menu-icon.png"
@@ -37,16 +44,18 @@
           />
         </button>
       </div>
-    </nav>
+    </header>
 
     <!-- Mobile Menu (Hidden by Default) -->
-    <div id="mobile-menu" class="mobile-menu hidden">
-      <div class="menu-item">About</div>
-      <div class="menu-item">Service</div>
-      <div class="menu-item">Our Work</div>
-      <div class="menu-item">Team</div>
-      <button class="contact">Contact Us</button>
-    </div>
+    <nav id="mobile-menu" class="mobile-menu hidden">
+      <ul class="nav-list">
+        <li class="item">About</li>
+        <li class="item">Service</li>
+        <li class="item">Our Work</li>
+        <li class="item">Team</li>
+        <li><button class="contact">Contact Us</button></li>
+      </ul>
+    </nav>
 
     <section class="hero">
       <div class="hero-text">
@@ -56,19 +65,15 @@
           solutions, we help brands turn ideas into powerful digital experiences
           that connect, engage, and scale.
         </p>
-        <button class="hero-button">Let's Talk</button>
+        <button>Let's Talk</button>
       </div>
 
-      <div class="hero-image-card">
-        <img
-          src="./assets/images/hero-hand.png"
-          alt="hero"
-          class="hero-image"
-        />
+      <div class="image-card">
+        <img src="./assets/images/hero-hand.png" alt="hero" />
       </div>
     </section>
 
-    <section class="who-we-are text-center">
+    <section class="about text-center">
       <h1 class="title">Who We Are</h1>
       <p>
         We're a group of tech students trained in
@@ -78,7 +83,7 @@
       </p>
     </section>
 
-    <section class="what-we-do">
+    <section class="service">
       <div class="text text-center">
         <h1 class="title">What we do</h1>
         <p class="desc">
@@ -86,93 +91,86 @@
         </p>
       </div>
 
-      <div class="services text-center">
-        <!-- Serivice Row 1 -->
-        <div class="service-row">
-          <div class="service-card">
-            <img
-              class="icon"
-              src="./assets/icons/Website.png"
-              alt="website-icon"
-            />
-            <h3 class="title">Web Development</h3>
-            <p class="desc">
-              Modern websites using HTML, CSS, JavaScript, and frameworks.
-            </p>
-          </div>
+      <div class="content text-center">
+        <div class="card">
+          <img
+            class="icon"
+            src="./assets/icons/Website.png"
+            alt="website-icon"
+          />
+          <h3 class="title">Web Development</h3>
+          <p class="desc">
+            Modern websites using HTML, CSS, JavaScript, and frameworks.
+          </p>
+        </div>
 
-          <div class="service-card">
-            <img
-              class="icon"
-              src="./assets/icons/Mobile.png"
-              alt="Mobile-icon"
-            />
-            <h3 class="title">App Development</h3>
-            <p class="desc">Mobile and desktop apps tailored for your needs</p>
-          </div>
+        <div class="card">
+          <img class="icon" src="./assets/icons/Mobile.png" alt="Mobile-icon" />
+          <h3 class="title">App Development</h3>
+          <p class="desc">Mobile and desktop apps tailored for your needs</p>
+        </div>
 
-          <div class="service-card">
-            <img class="icon" src="./assets/icons/AI.png" alt="AI-icon" />
-            <h3 class="title">AI Integration</h3>
-            <p class="desc">
-              Smart solutions using AI-powered tools and automation.
-            </p>
-          </div>
+        <div class="card">
+          <img class="icon" src="./assets/icons/AI.png" alt="AI-icon" />
+          <h3 class="title">AI Integration</h3>
+          <p class="desc">
+            Smart solutions using AI-powered tools and automation.
+          </p>
+        </div>
 
-          <!-- Serivice Row 2 -->
-          <div class="service-card">
-            <img class="icon" src="./assets/icons/Paint.png" alt="paint-icon" />
-            <h3 class="title">UI/UX Design</h3>
-            <p class="desc">
-              Clean and functional designs for better user experience.
-            </p>
-          </div>
+        <!-- Serivice Row 2 -->
+        <div class="card">
+          <img class="icon" src="./assets/icons/Paint.png" alt="paint-icon" />
+          <h3 class="title">UI/UX Design</h3>
+          <p class="desc">
+            Clean and functional designs for better user experience.
+          </p>
+        </div>
 
-          <div class="service-card">
-            <img
-              class="icon"
-              src="./assets/icons/Landing-Page.png"
-              alt="landing-page-icon"
-            />
-            <h3 class="title">Landing Page Design</h3>
-            <p class="desc">
-              High-converting landing pages for your product or business.
-            </p>
-          </div>
+        <div class="card">
+          <img
+            class="icon"
+            src="./assets/icons/Landing-Page.png"
+            alt="landing-page-icon"
+          />
+          <h3 class="title">Landing Page Design</h3>
+          <p class="desc">
+            High-converting landing pages for your product or business.
+          </p>
+        </div>
 
-          <div class="service-card">
-            <img class="icon" src="./assets/icons/CMS.png" alt="cms-icon" />
-            <h3 class="title">CMS Integration</h3>
-            <p class="desc">
-              Easy-to-manage websites with  WordPress or Webflow.
-            </p>
-          </div>
+        <div class="card">
+          <img class="icon" src="./assets/icons/CMS.png" alt="cms-icon" />
+          <h3 class="title">CMS Integration</h3>
+          <p class="desc">
+            Easy-to-manage websites with  WordPress or Webflow.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="our-work">
+    <section class="portofolio">
       <div class="text-center">
         <h1 class="title">Our Work</h1>
         <p class="desc">See what we’ve built with passion and purpose</p>
       </div>
 
-      <div class="portofolio">
-        <div class="portofolio-card">
+      <div class="content">
+        <div class="card">
           <img
             src="./assets/images/portofolios/portofolio-1.png"
             alt="portofolio-1"
           />
           <p class="img-desc">portofolio 1</p>
         </div>
-        <div class="portofolio-card">
+        <div class="card">
           <img
             src="./assets/images/portofolios/portofolio-2.png"
             alt="portofolio-2"
           />
           <p class="img-desc">portofolio 2</p>
         </div>
-        <div class="portofolio-card">
+        <div class="card">
           <img
             src="./assets/images/portofolios/portofolio-3.png"
             alt="portofolio-3"
@@ -188,29 +186,29 @@
         <p class="desc">A group of future-ready tech makers.</p>
       </div>
 
-      <div class="members text-center">
-        <div class="member-card">
+      <div class="content text-center">
+        <div class="card">
           <img src="./assets/images/users/user-1.png" alt="" />
           <div class="text-center">
             <h3 class="name">Jasper Kim</h3>
             <p class="job-title">Project Manager</p>
           </div>
         </div>
-        <div class="member-card">
+        <div class="card">
           <img src="./assets/images/users/user-2.png" alt="" />
           <div class="text-center">
             <h3 class="name">Alex Jonathan</h3>
             <p class="job-title">Full Stack Developer</p>
           </div>
         </div>
-        <div class="member-card">
+        <div class="card">
           <img src="./assets/images/users/user-3.png" alt="" />
           <div class="text-center">
             <h3 class="name">Mario Lopez</h3>
             <p class="job-title">UI/UX Designer</p>
           </div>
         </div>
-        <div class="member-card">
+        <div class="card">
           <img src="./assets/images/users/user-4.png" alt="" />
           <div class="text-center">
             <h3 class="name">Jasper Kim</h3>
@@ -226,8 +224,8 @@
         <p class="desc">Need a tech team? We're ready to help</p>
       </div>
 
-      <form action="" class="form-contact">
-        <div class="input-item">
+      <form action="" class="form">
+        <div class="item">
           <label for="">Name</label>
           <input
             type="text"
@@ -237,7 +235,7 @@
           />
         </div>
 
-        <div class="input-item">
+        <div class="item">
           <label for="email">Email</label>
           <input
             type="email"
@@ -247,7 +245,7 @@
           />
         </div>
 
-        <div class="input-item">
+        <div class="item">
           <label for="message">Message</label>
           <textarea
             name="message"
